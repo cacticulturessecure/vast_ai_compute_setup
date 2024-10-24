@@ -1,0 +1,32 @@
+grab rsa ssh key from nvim ~/.ssh/vastai_rsa.pub
+
+To use this guide:
+
+Save it as setup_whisperx.sh
+Make it executable:
+
+bashCopychmod +x setup_whisperx.sh
+
+Run it:
+
+bashCopy./setup_whisperx.sh
+Key points to remember:
+
+You'll need to update the Hugging Face token in the transcribe.py script
+Make sure your audio file is in the working directory
+The speechbrain warnings can be ignored
+The script assumes CUDA 11.8 compatibility
+
+Optional but recommended checks after setup:
+bashCopy# Check CUDA
+nvidia-smi
+
+# Verify ffmpeg
+ffmpeg -version
+
+# Check Python and pip versions
+python3 --version
+pip --version
+
+
+Then when you need to pull a file from the server to your local machine - scp -P 37129 root@ssh4.vast.ai:/workspace/transcript.txt ./
