@@ -77,7 +77,7 @@ def process_audio_file(audio_path, num_speakers):
         torch.cuda.empty_cache()
         
         print(f"Diarizing with {num_speakers} speakers...")
-        diarize_model = whisperx.DiarizationPipeline(use_auth_token="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", device=device)
+        diarize_model = whisperx.DiarizationPipeline(use_auth_token="hf-token-here", device=device)
         diarize_segments = diarize_model(audio, min_speakers=num_speakers, max_speakers=num_speakers)
         result = whisperx.assign_word_speakers(diarize_segments, result)
         

@@ -33,7 +33,7 @@ try:
     torch.cuda.empty_cache()
     
     # 4. Diarize with speaker labels
-    diarize_model = whisperx.DiarizationPipeline(use_auth_token="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", device=device)
+    diarize_model = whisperx.DiarizationPipeline(use_auth_token="hugging-face-token-here", device=device)
     diarize_segments = diarize_model(audio, min_speakers=2, max_speakers=2)
     result = whisperx.assign_word_speakers(diarize_segments, result)
     

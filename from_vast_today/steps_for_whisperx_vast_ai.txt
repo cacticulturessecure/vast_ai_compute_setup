@@ -29,4 +29,3 @@ python3 --version
 pip --version
 
 
-Then when you need to pull a file from the server to your local machine - scp -P 37129 root@ssh4.vast.ai:/workspace/transcript.txt ./
