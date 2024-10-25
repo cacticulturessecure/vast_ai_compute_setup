@@ -1,0 +1,1 @@
+This is a set up so we can leverage vast.ai as a variable compute instance. will be working on start times and seeing how to best leverage this economically for a hour of usage 3 times a week for speach use cases where gpu is needed.

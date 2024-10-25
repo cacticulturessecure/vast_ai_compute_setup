@@ -1,0 +1,3 @@
+CUDA Version: 12.5.82
+Python Version: ./export_system_info.sh: line 47: python: command not found
+Pip Version: pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)

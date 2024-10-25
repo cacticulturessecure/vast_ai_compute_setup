@@ -1,0 +1,2 @@
+total 4
+-rw-r--r-- 1 root root 139 Apr 20  2023 cuda-ubuntu2204-x86_64.list
