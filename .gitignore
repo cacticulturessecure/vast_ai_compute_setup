@@ -1,0 +1,33 @@
+# Ignore all files in speaker_samples and its subdirectories
+speaker_samples/**/*
+
+# But keep the directory structure
+!speaker_samples/
+!speaker_samples/*/
+
+# Ignore log files
+*.log
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore system and hidden files
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific files
+.env
+venv/
+*.venv
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore any potential sensitive or large files
+*.pem
+*.key
+*.mp3
+*.wav
+*.flac
